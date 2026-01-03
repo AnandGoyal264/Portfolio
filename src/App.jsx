@@ -73,7 +73,8 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+     <section className="pt-28 md:pt-32 pb-16 md:pb-20 px-4 md:px-6">
+
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
@@ -88,7 +89,8 @@ export default function Portfolio() {
               </p>
               
               {/* Stats */}
-              <div className="flex gap-6 mb-8">
+              <div className="flex flex-wrap gap-4 md:gap-6 mb-8">
+
                 <div className="bg-slate-800/50 px-6 py-3 rounded-lg border border-purple-500/20">
                   <div className="text-3xl font-bold text-purple-400">8.08</div>
                   <div className="text-sm text-gray-400">CGPA</div>
@@ -152,7 +154,7 @@ export default function Portfolio() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-400">Badge Earned</span>
-                    <span className="text-xl">🏆</span>
+                    <span className="text-xl">22+ 🏆</span>
                   </div>
                   <a href="https://leetcode.com/u/anandgoyal0810/" target="_blank" rel="noopener noreferrer"
                      className="mt-4 w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all">
@@ -169,13 +171,15 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-6 bg-slate-900/50">
+      <section className="py-14 md:py-20 px-4 md:px-6
+ bg-slate-900/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 flex items-center gap-3">
             <span className="text-3xl">💻</span>
             Technical Skills
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
             {Object.entries(skills).map(([category, items]) => (
               <div key={category} className="bg-slate-800/50 p-6 rounded-xl border border-purple-500/20 hover:border-purple-500/40 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-purple-300">{category}</h3>
@@ -193,13 +197,15 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-6">
+      <section className="py-14 md:py-20 px-4 md:px-6
+">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 flex items-center gap-3">
             <span className="text-3xl">🚀</span>
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
             {projects.map((project, idx) => (
               <div key={idx} className="bg-slate-800/50 rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-500/40 transition-all hover:transform hover:scale-105">
                 <div className="p-6">
@@ -248,13 +254,15 @@ export default function Portfolio() {
       </section>
 
       {/* Achievements */}
-      <section className="py-20 px-6 bg-slate-900/50">
+      <section className="py-14 md:py-20 px-4 md:px-6
+bg-slate-900/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 flex items-center gap-3">
             <span className="text-3xl">🏆</span>
             Achievements
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
             {achievements.map((achievement, idx) => (
               <div key={idx} className="bg-slate-800/50 p-6 rounded-xl border border-purple-500/20 text-center hover:border-purple-500/40 transition-all hover:transform hover:scale-105">
                 <div className="text-4xl mb-3">{achievement.icon}</div>
@@ -267,13 +275,15 @@ export default function Portfolio() {
       </section>
 
       {/* Experience */}
-      <section className="py-20 px-6">
+      <section className="py-14 md:py-20 px-4 md:px-6
+">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 flex items-center gap-3">
             <span className="text-3xl">🎓</span>
             Experience
           </h2>
-          <div className="bg-slate-800/50 p-8 rounded-xl border border-purple-500/20">
+        <div className="bg-slate-800/50 p-5 md:p-8 rounded-xl border border-purple-500/20">
+
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h3 className="text-2xl font-bold">Summer Intern</h3>
@@ -302,7 +312,8 @@ export default function Portfolio() {
       </section>
 
       {/* Contact */}
-      <section className="py-20 px-6 bg-slate-900/50">
+      <section className="py-14 md:py-20 px-4 md:px-6
+ bg-slate-900/50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
           <p className="text-xl text-gray-300 mb-8">
