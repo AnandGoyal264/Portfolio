@@ -135,37 +135,33 @@ export default function Portfolio() {
             </div>
 
             {/* LeetCode Card */}
-            <div className="flex-1 max-w-md">
-              <div className="bg-gradient-to-br from-slate-800 to-purple-900/30 p-8 rounded-2xl border border-purple-500/30 shadow-2xl">
-                <div className="flex items-center gap-3 mb-6">
-                  <svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
-                  </svg>
-                  <h3 className="text-2xl font-bold">LeetCode Profile</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Problems Solved</span>
-                    <span className="text-2xl font-bold text-purple-400">1000+</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Current Streak</span>
-                    <span className="text-2xl font-bold text-green-400">500+ Days</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Badge Earned</span>
-                    <span className="text-xl">22+ 🏆</span>
-                  </div>
-                  <a href="https://leetcode.com/u/anandgoyal0810/" target="_blank" rel="noopener noreferrer"
-                     className="mt-4 w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all">
-                    View Full Profile
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+<div className="flex-1 max-w-md">
+  <div className="bg-gradient-to-br from-slate-800 to-purple-900/30 p-6 md:p-8 rounded-2xl border border-purple-500/30 shadow-2xl">
+    <div className="flex items-center gap-3 mb-6">
+      <svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+      </svg>
+      <h3 className="text-xl md:text-2xl font-bold">LeetCode Profile</h3>
+    </div>
+    
+    {/* LeetCode Stats Image */}
+    <div className="mb-6 flex justify-center">
+      <img 
+        src="https://leetcard.jacoblin.cool/anandgoyal0810?theme=dark&font=Inter&ext=contest" 
+        alt="LeetCode Stats"
+        className="w-full max-w-sm rounded-lg"
+      />
+    </div>
+    
+    <a href="https://leetcode.com/u/anandgoyal0810/" target="_blank" rel="noopener noreferrer"
+       className="w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all">
+      View Full Profile
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
+  </div>
+</div>
           </div>
         </div>
       </section>
