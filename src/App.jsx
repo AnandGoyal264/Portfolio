@@ -4,7 +4,27 @@ export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('about');
 
   const projects = [
+   
     {
+      
+  title: "Expense Split",
+  description: "Full‑stack MERN expense sharing application that allows users to create groups, add shared expenses, split costs (equal, exact or percentage), track balances and record settlements.",
+  tech: ["Node.js", "Express", "MongoDB", "React", "JWT", "Axios", "Render", "Vercel"],
+  features: [
+    "Secure authentication with JWT based authorization",
+    "Create groups and manage members",
+    "Supports Equal, Exact and Percentage expense splits",
+    "Tracks who owes whom with clear balance summary",
+    "Settlement system to clear dues while preserving expense history",
+    "Mobile‑responsive UI with user‑friendly workflow"
+  ],
+  link: "https://equisplit.anandgoyal.online/",
+  live: true
+
+
+
+    },
+     {
       title: "Full Stack Educational Website",
       description: "MERN-based school management system with role-based access for admin, teachers, and students.",
       tech: ["Node.js", "Express", "MongoDB", "React", "Passport.js", "Cloudinary"],
@@ -304,6 +324,40 @@ bg-slate-900/50">
               </li>
             </ul>
           </div>
+          <div className="bg-slate-800/50 p-5 md:p-8 rounded-xl border border-purple-500/20">
+          {/* Hackathon Experience */}
+<div className="bg-slate-800/50 p-5 md:p-8 rounded-xl border border-purple-500/20 mb-6">
+  <div className="flex justify-between items-start mb-4">
+    <div>
+      <h3 className="text-2xl font-bold">Full Stack Developer (Hackathon)</h3>
+      <p className="text-purple-400">Expense Split Web App</p>
+    </div>
+    <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">
+      2025
+    </span>
+  </div>
+
+  <ul className="space-y-2 text-gray-300">
+    <li className="flex items-start gap-2">
+      <span className="text-purple-400 mt-0.5">›</span>
+      Built a Splitwise‑like full‑stack MERN application for group expense sharing
+    </li>
+    <li className="flex items-start gap-2">
+      <span className="text-purple-400 mt-0.5">›</span>
+      Implemented Equal, Exact & Percentage based expense split logic
+    </li>
+    <li className="flex items-start gap-2">
+      <span className="text-purple-400 mt-0.5">›</span>
+      Designed secure authentication, groups, balances and settlement system
+    </li>
+    <li className="flex items-start gap-2">
+      <span className="text-purple-400 mt-0.5">›</span>
+      Tech: React, Node.js, Express, MongoDB, JWT, Render, Vercel
+    </li>
+  </ul>
+</div>
+          </div>
+
         </div>
       </section>
 
